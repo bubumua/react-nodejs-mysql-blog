@@ -1,0 +1,115 @@
+$lightGreen: #00c853;
+
+* {
+    margin: 0;
+    padding: 0;
+    // box-sizing: border-box;
+}
+
+.app {
+
+    .container {
+
+        // login & register
+        .auth {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; // 100% of the viewport height, to center the form
+            background-color: $lightGreen;
+
+            h1 {
+                margin-bottom: 20px;
+                color: teal;
+                font-size: 60px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: stretch;
+                width: 300px;
+
+                input {
+                    margin-bottom: 10px;
+                    padding: 10px 0px;
+                    width: 100%;
+                    border: none;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: red;
+                    font-size: 14px;
+                }
+
+                button {
+                    margin: 10px 0;
+                    padding: 10px;
+                    width: 100%;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: teal;
+                    color: white;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+
+                span {
+                    font-size: 14px;
+                    text-align: center;
+                }
+            }
+        }
+
+        // navbar
+        .navbar {
+            .container {
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .logo {
+                    img {
+                        width: 50px;
+
+                    }
+                }
+
+                .links {
+                    display: flex;
+                    justify-self: center;
+                    align-self: center;
+                    gap: 10px;
+
+                    .link {
+                        text-decoration: none;
+                        color: inherit;
+                    }
+
+                    .write {
+                        background: $lightGreen;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        // footer
+        footer {
+            margin-top: 80px;
+
+            img {
+                width: 20px;
+            }
+        }
+    }
+}
