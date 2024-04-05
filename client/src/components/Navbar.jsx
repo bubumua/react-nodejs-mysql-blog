@@ -14,7 +14,8 @@ const Navbar = () => {
                     <Link className="link">link</Link>
                     <Link className="link">link</Link>
                     <span>Bubu</span>
-                    <span>Logout</span>
+                    {/* <span>Logout</span> */}
+                    <Link to="/login">Logout</Link>
                     <Link to="/write" className="link write">write</Link>
                 </div>
             </div>
